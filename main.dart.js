@@ -50820,7 +50820,7 @@ ao(){this.aT()
 var s=A.i2()===B.a2||A.i2()===B.ab
 this.f=s},
 L(a,b){var s,r,q=this,p=null,o=!q.f?16:0,n=t.E,m=A.b([],n)
-if(!q.f)B.b.I(m,A.b([A.ig(p,A.MN(A.b([new A.t2(A.ajV(p,p,new A.o1("https://images.squarespace-cdn.com/content/v1/602a179139fa1301bf069b80/1616303754015-A01RA2HAM8XH0B704UEY/Logo_Orange.png?format=1500w",1,p)),80,80,p)],n),B.co,B.bN),B.jK,p,p,p,p,p,p),B.rb],n))
+if(!q.f&&q.e==null)B.b.I(m,A.b([A.ig(p,A.MN(A.b([new A.t2(A.ajV(p,p,new A.o1("https://images.squarespace-cdn.com/content/v1/602a179139fa1301bf069b80/1616303754015-A01RA2HAM8XH0B704UEY/Logo_Orange.png?format=1500w",1,p)),80,80,p)],n),B.co,B.bN),B.jK,p,p,p,p,p,p),B.rb],n))
 s=q.e
 if(s==null){s=q.a.c
 r=!q.f?B.Ea:b.N(t.w).f.a
