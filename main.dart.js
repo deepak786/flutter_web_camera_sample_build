@@ -37167,7 +37167,7 @@ case 2:return A.G(o,r)}})
 return A.I($async$of,r)}}
 A.a0D.prototype={}
 A.ra.prototype={
-gkr(){return"web_background.jpg"},
+gkr(){return"assets/web_background.jpg"},
 pV(a){var s,r={},q=a.a
 if(q==null)q=$.LU()
 r.a=r.b=null
@@ -37193,7 +37193,7 @@ if(q==null)return a.j(0,r)
 if(b<2||b>(r+q)/2)return a.j(0,q)
 else return a.j(0,r)},
 AC(a){var s,r,q,p
-if(a==="web_background.jpg")return 1
+if(a==="assets/web_background.jpg")return 1
 s=A.pJ(a,0,null)
 r=s.gkF().length>1?s.gkF()[s.gkF().length-2]:""
 q=$.aea().vu(r)
