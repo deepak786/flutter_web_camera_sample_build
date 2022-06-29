@@ -53644,7 +53644,7 @@ p=A.C6(A.dn(p,k,k,2,k,k,!0,k,$.afT().hX(B.j),B.cq,k,k))
 q=A.ok(!1,!0,A.cj(k,A.fg(A.b([B.z0,p,A.abU(B.kR,l.d==null&&!j.a.c?B.j:B.B,k)],s),B.M,B.pY,B.Q),o,k,k,k,k,B.yx,17976931348623157e292),k,!0,k,k,k,k,k,k,k,k,k,q,k,k,k)
 p=A.b([new A.hz(1,B.bq,l.TU(j),k)],s)
 o=l.a.y
-if(o!=null)B.b.J(p,A.b([new A.hz(1,B.bq,A.ok(!1,!0,new A.ct(B.yy,A.fg(A.b([A.dn("Tips",k,k,k,k,k,k,k,$.a9K().Xt(B.xj,B.t1),k,k,k),B.rN,B.z1],s),B.M,B.N,B.aP),k),k,!0,k,k,k,k,k,k,k,k,k,o,k,k,k),k)],s))
+if(o!=null)B.b.J(p,A.b([A.ok(!1,!0,new A.ct(B.yy,A.fg(A.b([A.dn("Tips",k,k,k,k,k,k,k,$.a9K().Xt(B.xj,B.t1),k,k,k),B.rN,B.z1],s),B.M,B.N,B.aP),k),k,!0,k,k,k,k,k,k,k,k,k,o,k,k,k)],s))
 B.b.J(r,A.b([q,B.jd,A.fg(p,B.M,B.pY,B.Q)],s))}r=A.b([A.hr(r,B.aZ,B.N,B.aP)],s)
 q=l.d
 if(q!=null)B.b.J(r,A.b([new A.cY(B.G,k,k,A.cj(k,new A.tc(q,new A.a4x(),new A.a4y(l),k),k,k,new A.ci(A.aA(B.e.aA(127.5),0,0,0),k,k,k,k,k,B.dt),k,k,B.yA,k),k)],s))
@@ -53705,7 +53705,7 @@ s=this.c.M(t.Cu)
 s.toString
 s.f.ll(A.wp(r,r,r,r,B.I,A.dn(p+"\n"+A.k(q),r,r,r,r,r,r,r,r,r,r,r),B.bo,B.bZ,r,r,r,r,r,r,r))},
 TU(a){var s=null
-return A.cj(s,!a.a.c?A.dn("Camera preview - Not recording",s,s,s,s,s,s,s,$.a9I().hX(B.j),s,s,s):A.fg(A.b([new A.rz(new A.a4t(),s),B.rO,new A.vp(new A.a4u(),s)],t.D),B.M,B.N,B.aP),s,s,B.tW,s,B.c0,B.kE,s)}}
+return A.cj(s,!a.a.c?A.dn("Camera preview - Not recording",s,s,s,s,s,s,s,$.a9I().hX(B.j),s,s,s):A.fg(A.b([new A.rz(new A.a4t(),s),B.rO,new A.hz(1,B.bq,new A.vp(new A.a4u(),s),s)],t.D),B.M,B.N,B.aP),s,s,B.tW,s,B.c0,B.kE,s)}}
 A.a4x.prototype={
 $2(a,b){var s=null
 return A.dn(B.f.i(B.f.c8(A.bK(0,b,0).a,1e6)+1),s,s,s,s,s,s,s,$.Mv().vo(B.j,50),B.cq,s,s)},
