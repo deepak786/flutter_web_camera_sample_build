@@ -16457,7 +16457,7 @@ _.b=a
 _.c=null},
 a0n:function a0n(a){this.a=a},
 a0m:function a0m(){},
-tT:function tT(a,b,c,d,e,f,g,h){var _=this
+tT:function tT(a,b,c,d,e,f,g,h,i){var _=this
 _.c=a
 _.d=b
 _.e=c
@@ -16465,7 +16465,8 @@ _.f=d
 _.r=e
 _.w=f
 _.x=g
-_.a=h},
+_.y=h
+_.a=i},
 HP:function HP(a,b){var _=this
 _.d=a
 _.a=null
@@ -53316,7 +53317,7 @@ r=A.fC(A.b([A.bU(n,A.d2(o.x,n,n,2,n,n,!0,n,$.a6F().h1(B.j),B.bL,n,n),r,n,n,n,n,B
 p=A.b([A.bU(n,A.lC(!1,!0,B.FX,n,!0,n,n,n,n,n,n,n,n,n,new A.a2Z(o),n),n,B.tV,B.dp,n,n,n,n),A.bU(n,A.lC(!1,!0,B.FV,n,!0,n,n,n,n,n,n,n,n,n,new A.a3_(o),n),n,B.tW,B.dp,n,n,n,n)],q)
 if(!$.acg){A.ae9(!1)
 A.ae9(!0)
-$.acg=!0}return new A.tT(m,!0,!0,!0,s,!1,A.h6(B.ae,A.b([r,new A.cU(B.bP,n,n,A.fC(A.b([new A.DT(new A.G0(B.a9,B.th,30,B.th,10,B.Kx,p,n),n),B.FL],q),B.O,B.N,B.ap),n)],q),B.aE),n)},
+$.acg=!0}return new A.tT(m,!0,!0,!0,s,!1,A.h6(B.ae,A.b([r,new A.cU(B.bP,n,n,A.fC(A.b([new A.DT(new A.G0(B.a9,B.th,30,B.th,10,B.Kx,p,n),n),B.FL],q),B.O,B.N,B.ap),n)],q),B.aE),!0,n)},
 o6(){var s=0,r=A.N(t.y),q,p,o
 var $async$o6=A.O(function(a,b){if(a===1)return A.K(b,r)
 while(true)switch(s){case 0:s=3
@@ -53667,6 +53668,8 @@ q=B.c.qu(" nodownload noplaybackrate")
 if(B.c.qu(q).length!==0)s.setAttribute("controlsList",q)
 p.a.toString
 s.setAttribute("disablePictureInPicture",!0)
+p.a.toString
+s.setAttribute("autoplay","true")
 $.Mr()
 s=p.a.c
 $.fw().qi(s,new A.a1p(p),!0)},

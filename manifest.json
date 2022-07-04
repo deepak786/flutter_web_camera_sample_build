@@ -1,6 +1,6 @@
 {
-  "name": "storytiling_vm",
-  "short_name": "storytiling_vm",
+  "name": "storytiling_webapp",
+  "short_name": "storytiling_webapp",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#F28500",
