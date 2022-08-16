@@ -71914,14 +71914,14 @@ s=t.p
 return A.b1(A.b([B.dg,q,B.wb,new A.aG(300,r,p,r),B.wb,A.ax(r,A.apA(r,r,B.cE,!0,r,A.ev(A.b([A.ev(r,n,o,"Note: "),A.ev(r,r,B.aP.vr(B.bD),"We\u2019ve also sent you a link by email so you can pick up where you left off at any time")],t.VO),r,r,r),B.N,r,r,1,B.aQ),B.i,r,B.xP,r,r,r,r,B.Dm,r,r,r),B.aC,A.nl(B.e0,A.b([A.am("Have you entered the wrong email?",r,r,2,r,r,r,r,B.aP.vr(B.bD),B.N,r,r),B.f6,A.dz(!1,!0,A.am("Change my details",r,r,r,r,r,r,r,B.aP.acl(B.aF,B.c6,B.bD),B.N,r,r),r,!0,r,r,r,r,r,r,r,r,r,r,r,new A.aht(this),r,r,r)],s),B.dl,B.a0,B.bg,0,0),B.ad],s),B.r,B.bm,B.o)},
 Zc(a){var s=t.Uh
 return new A.a2e(B.nN,!0,A.b([A.au2(this.f,A.b([new A.ahj()],s)),A.au2(this.r,A.b([new A.ahk()],s))],t.BZ),B.mU)},
-F(a,b){var s,r,q,p,o,n=this,m=null,l=t.p,k=A.ax(m,A.b1(A.b([A.rV("assets/logo.png",60,60)],l),B.r,B.n,B.o),B.i,B.u,m,m,m,m,m,B.cS,m,m,m)
-if(n.y)s=n.abP()
-else{s=n.Zc(b)
-r=A.am("Don\u2019t lose your video message!",m,m,m,m,m,m,m,$.kt(),B.N,m,m)
-q=A.am("Share your details to save your video message and continue",m,m,m,m,m,m,m,$.nJ(),B.bR,m,m)
-p=A.uz(n.d,m,n.f,"Enter your name",B.MR,"Your Name",B.wt)
-o=n.z?"Please enter a valid email":m
-s=new A.z4(A.b1(A.b([r,B.wa,q,B.dg,p,B.bQ,A.uz(n.e,o,n.r,"Enter your email",B.MQ,"Your Email",B.f9),B.dg,new A.aG(300,m,A.hl(B.ae,B.bz,m,n.x,"Save and Continue",new A.ahp(n,b),!1,B.h),m)],l),B.r,B.n,B.o),s,m)}return A.po(m,new A.aG(m,17976931348623157e292,A.pB(A.dv(A.ax(m,A.b1(A.b([k,B.fy,B.bQ,s,B.ad],l),B.r,B.n,B.o),B.i,m,m,m,m,m,B.aH,m,m,m,550),m,m),n.w,m,m,m),m),m)}}
+F(a,b){var s,r,q,p,o=this,n=null,m=o.Zc(b),l=t.p,k=A.ax(n,A.b1(A.b([A.rV("assets/logo.png",60,60)],l),B.r,B.n,B.o),B.i,B.u,n,n,n,n,n,B.cS,n,n,n)
+if(o.y)s=o.abP()
+else{s=A.am("Don\u2019t lose your video message!",n,n,n,n,n,n,n,$.kt(),B.N,n,n)
+r=A.am("Share your details to save your video message and continue",n,n,n,n,n,n,n,$.nJ(),B.bR,n,n)
+q=A.uz(o.d,n,o.f,"Enter your name",B.MR,"Your Name",B.wt)
+p=o.z?"Please enter a valid email":n
+p=A.b1(A.b([s,B.wa,r,B.dg,q,B.bQ,A.uz(o.e,p,o.r,"Enter your email",B.MQ,"Your Email",B.f9),B.dg,new A.aG(300,n,A.hl(B.ae,B.bz,n,o.x,"Save and Continue",new A.ahp(o,b),!1,B.h),n)],l),B.r,B.n,B.o)
+s=p}return A.po(n,new A.aG(n,17976931348623157e292,new A.z4(A.pB(A.dv(A.ax(n,A.b1(A.b([k,B.fy,B.bQ,s,B.ad],l),B.r,B.n,B.o),B.i,n,n,n,n,n,B.aH,n,n,n,550),n,n),o.w,n,n,n),m,n),n),n)}}
 A.ahw.prototype={
 $0(){var s=this.a
 s.J(new A.ahv(s))},
