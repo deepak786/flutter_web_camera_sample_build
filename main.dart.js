@@ -70886,14 +70886,14 @@ case 7:case 4:p.J(new A.ah6(p))
 case 1:return A.C(q,r)}})
 return A.D($async$iQ,r)},
 abJ(){var s=null,r=t.p
-return A.aJ(A.a([B.f7,A.a9("Your message is saved!",s,s,s,s,s,s,s,$.jn(),B.D,s,s),B.lA,A.an(s,A.a9("We\u2019ve sent you a link by email so you can pick up where you left off at any time",s,s,s,s,s,s,s,B.am.vm(B.cm),B.D,s,s),B.i,s,B.xU,s,s,s,s,B.D0,s,s,s),B.au,A.pV(B.cI,A.a([A.a9("Have you entered the wrong email?",s,s,2,s,s,s,s,B.am.vm(B.cm),B.D,s,s),B.bL,A.cX(!1,!0,A.a9("Change my details",s,s,s,s,s,s,s,B.am.acj(B.aD,B.bf,B.cm),B.D,s,s),s,!0,s,s,s,s,s,s,s,s,s,s,s,new A.agX(this),s,s,s)],r),B.fi,B.a2,B.cH,0,0),B.Lz,A.bv(A.d_(B.W,B.aB,s,!1,"Continue to send message",new A.agY(this),!1,B.h),s,300),B.U],r),B.o,B.aV,B.p)},
+return A.aJ(A.a([B.f8,A.a9("Your message is saved!",s,s,s,s,s,s,s,$.jn(),B.D,s,s),B.lA,A.an(s,A.a9("We\u2019ve sent you a link by email so you can pick up where you left off at any time",s,s,s,s,s,s,s,B.am.vm(B.cm),B.D,s,s),B.i,s,B.xU,s,s,s,s,B.D0,s,s,s),B.au,A.pV(B.cI,A.a([A.a9("Have you entered the wrong email?",s,s,2,s,s,s,s,B.am.vm(B.cm),B.D,s,s),B.bL,A.cX(!1,!0,A.a9("Change my details",s,s,s,s,s,s,s,B.am.acj(B.aD,B.bf,B.cm),B.D,s,s),s,!0,s,s,s,s,s,s,s,s,s,s,s,new A.agX(this),s,s,s)],r),B.fi,B.a2,B.cH,0,0),B.Lz,A.bv(A.d_(B.W,B.aB,s,!1,"Continue to send message",new A.agY(this),!1,B.h),s,300),B.U],r),B.o,B.aV,B.p)},
 H(a,b){var s,r,q,p,o=this,n=null,m=t.p,l=A.an(n,A.aJ(A.a([A.rN("assets/logo.png",60,60)],m),B.o,B.m,B.p),B.i,B.v,n,n,n,n,n,B.cV,n,n,n)
 if(o.w)s=o.abJ()
 else{s=A.a9("Don\u2019t lose your video message!",n,n,n,n,n,n,n,$.jn(),B.D,n,n)
 r=A.a9("Share your details to save your video message and continue",n,n,n,n,n,n,n,$.m4(),B.cE,n,n)
 q=A.pv(o.d,n,"Enter your name",B.lH,"Your Name",n,B.lG)
 p=o.x?"Please enter a valid email":n
-p=A.aJ(A.a([s,B.wi,r,B.f7,q,B.bN,A.pv(o.e,p,"Enter your email",B.wB,"Your Email",n,B.di),B.f7,A.bv(A.d_(B.W,B.aB,n,o.r,"Save and Continue",new A.agV(o,b),!1,B.h),n,300)],m),B.o,B.m,B.p)
+p=A.aJ(A.a([s,B.wi,r,B.f8,q,B.bN,A.pv(o.e,p,"Enter your email",B.wB,"Your Email",n,B.di),B.f8,A.bv(A.d_(B.W,B.aB,n,o.r,"Save and Continue",new A.agV(o,b),!1,B.h),n,300)],m),B.o,B.m,B.p)
 s=p}return A.ll(n,A.bv(A.n1(A.d3(A.an(n,A.aJ(A.a([l,B.mD,B.bN,s,B.U],m),B.o,B.m,B.p),B.i,n,n,n,n,n,B.aK,n,n,n,550),n,n),o.f,n,n),17976931348623157e292,n),n)}}
 A.ah0.prototype={
 $0(){var s=this.a
@@ -71768,7 +71768,7 @@ s.at=A.aq0()},
 $S:0}
 A.tJ.prototype={
 H(a,b){var s=null,r=t.p,q=A.an(B.E,A.aJ(A.a([A.rN("assets/logo.png",60,60)],r),B.o,B.m,B.p),B.i,B.v,s,s,s,s,s,B.cV,s,s,s),p=$.jn()
-return A.ll(s,A.bv(A.n1(A.d3(A.an(s,A.aJ(A.a([q,B.wl,A.a9("CONGRATS ON YOUR MEANINGFUL MESSAGE!",s,s,s,s,s,s,s,p,B.D,s,s),B.f8,A.a9("Your message has been scheduled!",s,s,s,s,s,s,s,p,B.D,s,s),B.au,A.a9("Note: We\u2019ve sent you a confirmation email and will let you know when your recipient receives your message",s,s,s,s,s,s,s,B.am.vm(B.cm),B.D,s,s),B.wl,B.PE,A.d_(B.bh,B.fC,s,!1,"Create another message",new A.a6G(),!1,B.bf)],r),B.o,B.aV,B.p),B.i,s,B.xV,s,s,s,s,B.dC,s,s,s),s,s),s,s,s),17976931348623157e292,s),s)}}
+return A.ll(s,A.bv(A.n1(A.d3(A.an(s,A.aJ(A.a([q,B.wl,A.a9("CONGRATS ON YOUR MEANINGFUL MESSAGE!",s,s,s,s,s,s,s,p,B.D,s,s),B.lB,A.a9("Your message has been scheduled!",s,s,s,s,s,s,s,p,B.D,s,s),B.au,A.a9("Note: We\u2019ve sent you a confirmation email and will let you know when your recipient receives your message",s,s,s,s,s,s,s,B.am.vm(B.cm),B.D,s,s),B.wl,B.PE,A.d_(B.bh,B.fC,s,!1,"Create another message",new A.a6G(),!1,B.bf)],r),B.o,B.aV,B.p),B.i,s,B.xV,s,s,s,s,B.dC,s,s,s),s,s),s,s,s),17976931348623157e292,s),s)}}
 A.a6G.prototype={
 $0(){B.ab.kX(window,$.HW,"_self")},
 $S:1}
@@ -71894,9 +71894,9 @@ return A.w((o==null?$.cl=new A.ei():o).rZ(p),$async$oO)
 case 4:case 3:return A.C(null,r)}})
 return A.D($async$oO,r)},
 abS(){var s=this,r=null,q=s.ay.b,p=A.ay2(q==null?"":q)
-q=A.a([B.au,A.a9("Here's the link for you to share your message:",r,r,r,r,r,r,r,$.il(),B.D,r,r),B.U,A.d3(A.cX(!1,!0,new A.B8("Copy Link",p,new A.a7P(s),B.W,s.w,450,r),r,!0,r,r,r,r,r,r,r,r,r,r,r,new A.a7Q(s),r,r,r),r,r),B.lB],t.p)
+q=A.a([B.au,A.a9("Here's the link for you to share your message:",r,r,r,r,r,r,r,$.il(),B.D,r,r),B.U,A.d3(A.cX(!1,!0,new A.B8("Copy Link",p,new A.a7P(s),B.W,s.w,450,r),r,!0,r,r,r,r,r,r,r,r,r,r,r,new A.a7Q(s),r,r,r),r,r),B.f7],t.p)
 if(s.fr)q.push(A.d3(A.bv(A.d_(B.bh,B.aB,r,!1,"I'm Done",new A.a7R(),!1,B.h),r,200),r,r))
-q.push(B.lB)
+q.push(B.f7)
 return A.aJ(q,B.Q,B.m,B.p)},
 QX(){var s,r,q,p,o,n,m,l,k=this,j=null,i="Select a Date",h=k.dx?"Please enter a valid email":j
 h=A.pv(k.f,h,"Email to deliver the message",B.wB,"Recipient's email",j,B.di)
@@ -71932,10 +71932,10 @@ if(k.dy)m="Oops\u2026 It looks like you entered an email. This field is to enter
 else m=k.db?u.P:i
 m=A.pv(k.e,m,"Name of your recipient",B.lH,i,i,B.di)
 l=k.w
-s=A.a([r,B.mD,B.bN,q,B.f7,o,B.au,n,B.bN,p,B.au,m,B.lA,A.an(B.E,A.bv(A.cX(!1,!0,A.d_(B.W,B.fC,i,l,"Preview",new A.a7E(k,b),!1,B.bf),i,!0,i,i,i,i,i,i,i,i,i,i,i,new A.a7F(k),i,i,i),i,100),B.i,i,i,i,i,i,i,i,i,i,i),B.wi,A.a9("How do you want to send your message?",i,i,i,i,i,i,i,$.il(),B.D,i,i),B.U,A.bv(A.pV(B.x3,A.a([A.an(i,A.cX(!1,!0,A.avL(B.DC,l,k.CW,"Schedule An Email",new A.a7G(k)),i,!0,i,i,i,i,i,i,i,i,i,i,i,new A.a7H(k),i,i,i),B.i,i,i,i,i,i,i,B.ha,i,i,235),A.an(i,A.cX(!1,!0,A.avL(B.DD,l,k.cx,"Share As Link",new A.a7I(k)),i,!0,i,i,i,i,i,i,i,i,i,i,i,new A.a7J(k),i,i,i),B.i,i,i,i,i,i,i,B.ha,i,i,235)],s),B.fi,B.a2,B.x3,0,0),i,j),B.lB],s)
+s=A.a([r,B.mD,B.bN,q,B.f8,o,B.au,n,B.bN,p,B.au,m,B.lA,A.an(B.E,A.bv(A.cX(!1,!0,A.d_(B.W,B.fC,i,l,"Preview",new A.a7E(k,b),!1,B.bf),i,!0,i,i,i,i,i,i,i,i,i,i,i,new A.a7F(k),i,i,i),i,100),B.i,i,i,i,i,i,i,i,i,i,i),B.wi,A.a9("How do you want to send your message?",i,i,i,i,i,i,i,$.il(),B.D,i,i),B.U,A.bv(A.pV(B.x3,A.a([A.an(i,A.cX(!1,!0,A.avL(B.DC,l,k.CW,"Schedule An Email",new A.a7G(k)),i,!0,i,i,i,i,i,i,i,i,i,i,i,new A.a7H(k),i,i,i),B.i,i,i,i,i,i,i,B.ha,i,i,235),A.an(i,A.cX(!1,!0,A.avL(B.DD,l,k.cx,"Share As Link",new A.a7I(k)),i,!0,i,i,i,i,i,i,i,i,i,i,i,new A.a7J(k),i,i,i),B.i,i,i,i,i,i,i,B.ha,i,i,235)],s),B.fi,B.a2,B.x3,0,0),i,j),B.f7],s)
 if(k.cx)s.push(k.abS())
 if(k.CW)s.push(k.QX())
-s.push(B.f8)
+s.push(B.lB)
 s=A.n1(A.d3(A.an(i,A.aJ(s,B.Q,B.m,B.p),B.i,i,i,i,i,i,B.aK,i,i,i,550),i,i),k.r,i,i)}return A.ll(i,A.bv(s,j,i),i)}}
 A.a7U.prototype={
 $0(){var s=this.a
@@ -72705,7 +72705,7 @@ Y(){return new A.QX(B.k)}}
 A.QX.prototype={
 H(a,b){return A.fZ($.arN(),new A.ahp(this),null)},
 Ed(){var s=null,r=A.dl(4),q=A.dl(4),p=t.p
-return A.o9(s,A.an(s,A.aJ(A.a([B.f8,A.a9("To record a video message, open in a browser:",s,s,s,B.fa,s,s,s,$.aoy().aS(B.at),B.D,s,s),B.lz,A.bk(A.a([A.i1(" \u2022 ",s,s,!0,B.am.aS(B.at),s),A.bj(A.i1("Click on the three dots in the top right corner",s,s,!0,B.am.aS(B.at),s),1)],p),B.Q,B.m,B.p,s),A.bk(A.a([A.i1(" \u2022 ",s,s,!0,B.am.aS(B.at),s),A.bj(A.i1('Click "open in browser"',s,s,!0,B.am.aS(B.at),s),1)],p),B.Q,B.m,B.p,s),B.bN],p),B.o,B.aV,B.G),B.i,s,s,new A.bt(B.j,s,s,q,s,s,B.N),s,s,s,B.aK,s,s,s),B.i,s,B.cW,new A.cG(r,B.u))}}
+return A.o9(s,A.an(s,A.aJ(A.a([B.f7,A.a9("To record a video message, open in a browser:",s,s,s,B.fa,s,s,s,$.aoy().aS(B.at),B.D,s,s),B.lz,A.bk(A.a([A.i1(" \u2022 ",s,s,!0,B.am.aS(B.at),s),A.bj(A.i1("Click on the three dots in the top right corner",s,s,!0,B.am.aS(B.at),s),1)],p),B.Q,B.m,B.p,s),A.bk(A.a([A.i1(" \u2022 ",s,s,!0,B.am.aS(B.at),s),A.bj(A.i1('Click "open in browser"',s,s,!0,B.am.aS(B.at),s),1)],p),B.Q,B.m,B.p,s),B.bN],p),B.o,B.aV,B.G),B.i,s,s,new A.bt(B.j,s,s,q,s,s,B.N),s,s,s,B.aK,s,s,s),B.i,s,B.cW,new A.cG(r,B.u))}}
 A.ahp.prototype={
 $2(a,b){var s,r,q,p,o=null,n=$.arO().Oc()
 if(!!n.fixed$length)A.Q(A.T("removeWhere"))
@@ -73457,7 +73457,7 @@ H(a,b){var s,r,q,p=this,o=null,n=A.dl(4),m=A.dl(4),l=$.aoy().aS(B.at)
 l=A.a9(p.c,o,o,o,B.fa,o,o,o,l,B.D,o,o)
 s=B.am.aS(B.at)
 r=t.p
-s=A.a([B.f8,l,B.lz,A.a9(p.f,o,o,o,B.fa,o,o,o,s,B.D,o,o),B.bN],r)
+s=A.a([B.lB,l,B.lz,A.a9(p.f,o,o,o,B.fa,o,o,o,s,B.D,o,o),B.bN],r)
 s.push(A.bv(o,p.CW,o))
 s.push(p.as)
 s.push(A.bv(o,p.cx,o))
@@ -78535,11 +78535,11 @@ B.wh=new A.bY(null,2,null,null)
 B.f6=new A.bY(null,30,null,null)
 B.bN=new A.bY(null,32,null,null)
 B.wi=new A.bY(null,36,null,null)
-B.lB=new A.bY(null,40,null,null)
-B.f7=new A.bY(null,48,null,null)
+B.f7=new A.bY(null,40,null,null)
+B.f8=new A.bY(null,48,null,null)
 B.wj=new A.bY(null,4,null,null)
 B.dh=new A.bY(null,50,null,null)
-B.f8=new A.bY(null,60,null,null)
+B.lB=new A.bY(null,60,null,null)
 B.Ly=new A.bY(null,64,null,null)
 B.wk=new A.bY(null,70,null,null)
 B.Lz=new A.bY(null,73,null,null)
