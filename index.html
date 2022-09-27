@@ -46,7 +46,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '162097207';
+        var serviceWorkerVersion = '2571438838';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -60,6 +60,16 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Smartlook Tracking Code -->
+    <script type='text/javascript'>
+      window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', '645fe70e7c306c40c8bb513f93d34bdca97645df', { region: 'eu' });
     </script>
 </head>
 <body>
@@ -98,6 +108,9 @@
 </div>
 <script>
     window.addEventListener('load', function() {
+      // https://web.developer.smartlook.com/docs/canvas#javascript
+      document.body.dataset.sl = "canvas-mq";
+
       var loading = document.querySelector('#loading');
       _flutter.loader.loadEntrypoint({
         serviceWorker: {

@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "0abe3cc72cb3a359008faebe332b7447",
-"index.html": "4b5596d5c8a1c30ce3d084bcd72d2cb2",
-"/": "4b5596d5c8a1c30ce3d084bcd72d2cb2",
-"main.dart.js": "33c6464fd3767e782f2f9888abf400f1",
+  "version.json": "55b81f7bad11457311d5de7ea596b7e6",
+"index.html": "0987c63e9b208aedfaf51efc1711bf93",
+"/": "0987c63e9b208aedfaf51efc1711bf93",
+"main.dart.js": "ecc84b456c4f0998f51b322a6cca84d0",
 "worker.js": "f916974921b8b3d98f9fdfc4b68e5432",
 "upload_file_function.js": "9924ee89dfc287638b587b568f25adfb",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
@@ -22,7 +22,7 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/ui_library/fonts/Poppins-Light.ttf": "f6ea751e936ade6edcd03a26b8153b4a",
 "assets/packages/ui_library/fonts/Poppins-Medium.ttf": "f61a4eb27371b7453bf5b12ab3648b9e",
-"assets/packages/ui_library/fonts/StIcons.ttf": "630ab2346334b8028a0662016f38fb2c",
+"assets/packages/ui_library/fonts/StIcons.ttf": "c58dfd80fc1bd6920b2054f76089d877",
 "assets/packages/ui_library/fonts/Poppins-Regular.ttf": "8b6af8e5e8324edfd77af8b3b35d7f9c",
 "assets/packages/ui_library/fonts/Poppins-Bold.ttf": "a3e0b5f427803a187c1b62c5919196aa",
 "assets/packages/ui_library/fonts/Poppins-SemiBold.ttf": "4cdacb8f89d588d69e8570edcbe49507",
