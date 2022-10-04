@@ -22017,8 +22017,8 @@ _.b=a
 _.c=null},
 agm:function agm(a){this.a=a},
 agl:function agl(){},
-asO(a,b,c,d,e,f,g,h){return new A.yw(h,!0,!0,!0,g,b,c,a,null)},
-yw:function yw(a,b,c,d,e,f,g,h,i){var _=this
+asO(a,b,c,d,e,f,g,h,i){return new A.yw(i,!0,!0,!0,h,b,c,a,g,null)},
+yw:function yw(a,b,c,d,e,f,g,h,i,j){var _=this
 _.c=a
 _.d=b
 _.e=c
@@ -22027,7 +22027,8 @@ _.r=e
 _.w=f
 _.x=g
 _.y=h
-_.a=i},
+_.z=i
+_.a=j},
 Qk:function Qk(a,b,c){var _=this
 _.d=a
 _.e=b
@@ -74781,7 +74782,7 @@ r=t.p
 q=A.a([A.aJ(B.HB,B.R,B.l,B.C)],r)
 if(n.z)B.c.K(q,A.a([B.mv],r))
 else B.c.K(q,A.a([new A.cf(B.cX,m,m,A.aJ(A.a([A.axq(A.v_(B.dz,A.a([A.an(m,A.cZ(B.a_,B.cn,m,!1,"Redo",n.grT(),!1,B.e),B.h,m,B.ev,B.cl,m,m,m,m,m,m,m),A.an(m,A.cZ(B.a_,B.av,m,!1,"Keep Video",new A.alS(n),!1,B.e),B.h,m,B.ev,B.cl,m,m,m,m,m,m,m)],r),B.mc,B.a5,B.dz,10,30)),B.xN],r),B.m,B.l,B.C),m)],r))
-o=A.asO(!0,!1,A.dn(B.a4,q,B.q,B.as),!0,!0,!0,s,l)
+o=A.asO(!0,!1,A.dn(B.a4,q,B.q,B.as),!0,!0,!0,"cover",s,l)
 if(A.ah()===B.u)return new A.dx(n.c.H(t.w).f.kJ(s),new A.eg(new A.alT(n,o),m),m)
 return o},
 kO(){var s=this.c
@@ -75149,7 +75150,7 @@ r=t.p
 q=A.a([],r)
 if(k.z)B.c.K(q,A.a([B.mv],r))
 else B.c.K(q,A.a([new A.cf(B.cX,j,j,A.aJ(A.a([A.axq(A.v_(B.dz,A.a([A.an(j,A.cZ(B.a_,B.cn,j,!1,"Redo",k.grT(),!1,B.e),B.h,j,B.ev,B.cl,j,j,j,j,j,j,j),A.an(j,A.cZ(B.a_,B.av,j,!1,"Keep Video",new A.ald(k),!1,B.e),B.h,j,B.ev,B.cl,j,j,j,j,j,j,j)],r),B.mc,B.a5,B.dz,10,30)),B.xN],r),B.m,B.l,B.C),j)],r))
-l=A.asO(!0,!1,A.dn(B.a4,q,B.q,B.as),!0,!0,!0,s,h)
+l=A.asO(!0,!1,A.dn(B.a4,q,B.q,B.as),!0,!0,!0,"cover",s,h)
 if(A.ah()===B.u)return new A.dx(k.c.H(t.w).f.kJ(s),new A.eg(new A.ale(k,l),j),j)
 return l},
 kO(){var s=this.c
@@ -76522,7 +76523,8 @@ s.height="100%"
 s=q.style
 s.width="100%"
 s=q.style
-B.b9.no(s,B.b9.n1(s,"object-fit"),"cover","")
+p=n.a.z
+B.b9.no(s,B.b9.n1(s,"object-fit"),p,"")
 q.id="my-video"
 q.setAttribute("playsinline","true")
 n.a.toString
@@ -76844,13 +76846,16 @@ if(o==null){o=A.ah()===B.u||A.ah()===B.y
 o=$.aW=new A.c4(o)}if(o.a)return q
 return A.bw(q,p,r)}}
 A.aex.prototype={
-$2(a,b){var s,r=this.b-40,q=$.aW
-if(q==null){q=A.ah()===B.u||A.ah()===B.y
-q=$.aW=new A.c4(q)}if(q.a)r-=this.a.e
-q=b.b
-if(q!=null){s=A.asO(!1,!0,null,!0,!0,!0,new A.N(r,0.5625*r),this.a.d)
-if(J.f(q,!0))return A.aso(B.mI,s)
-else return s}return B.ez},
+$2(a,b){var s,r,q,p=this.b,o=p-40,n=$.aW
+if(n==null){n=A.ah()===B.u||A.ah()===B.y
+n=$.aW=new A.c4(n)}n=n.a
+if(n)o-=this.a.e
+s=b.b
+if(s!=null){r=n?"contain":"cover"
+p=n?new A.N(p,400):new A.N(o,0.5625*o)
+q=A.asO(!1,!0,null,!0,!0,!0,r,p,this.a.d)
+if(J.f(s,!0))return A.aso(B.mI,q)
+else return q}return B.ez},
 $S:53}
 A.YC.prototype={
 $0(){var s=this.a,r=this.b
