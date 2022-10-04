@@ -76841,7 +76841,7 @@ if(o==null){o=A.ai()===B.u||A.ai()===B.y
 o=$.aW=new A.cb(o)}if(o.a)return q
 return A.bw(q,p,r)}}
 A.aex.prototype={
-$2(a,b){var s,r=this.b-40,q=b.b
+$2(a,b){var s,r=this.b-40-40,q=b.b
 if(q!=null){s=A.asO(!1,!0,null,!0,!0,!0,new A.N(r,0.5625*r),this.a.d)
 if(J.f(q,!0))return A.aso(B.mI,s)
 else return s}return B.ez},
