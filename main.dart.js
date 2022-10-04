@@ -76831,7 +76831,7 @@ A.C2.prototype={
 I(a){var s,r,q,p=null,o=$.aW
 if(o==null){o=A.ai()===B.u||A.ai()===B.y
 o=$.aW=new A.cb(o)}s=t.w
-r=o.a?a.H(s).f.a.a+40:a.H(s).f.a.a/2+40
+r=o.a?a.H(s).f.a.a:a.H(s).f.a.a/2+40
 o=A.a9(this.c,p,p,p,p,p,p,p,B.Y,B.z,p,p)
 s=$.aW
 if(s==null){s=A.ai()===B.u||A.ai()===B.y
