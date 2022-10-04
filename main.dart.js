@@ -76996,7 +76996,7 @@ A.C8.prototype={
 I(a){var s,r,q,p=null,o=$.aX
 if(o==null){o=A.ai()===B.v||A.ai()===B.z
 o=$.aX=new A.cc(o)}s=t.w
-r=o.a?a.H(s).f.a.a:a.H(s).f.a.a/2+40
+r=o.a?a.H(s).f.a.a+40:a.H(s).f.a.a/2+40
 o=A.a8(this.c,p,p,p,p,p,p,p,B.U,B.x,p,p)
 s=$.aX
 if(s==null){s=A.ai()===B.v||A.ai()===B.z
