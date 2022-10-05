@@ -76720,6 +76720,8 @@ s.width="100%"
 s=q.style
 p=n.a.z
 B.b9.ns(s,B.b9.n5(s,"object-fit"),p,"")
+p=q.style
+p.backgroundColor="#000000"
 q.id="my-video"
 q.setAttribute("playsinline","true")
 n.a.toString
