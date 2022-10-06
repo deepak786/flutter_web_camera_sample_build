@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 
-<head/>
+    <meta name="title" content="StoryTiling">
+    <meta name="description" content="StoryTiling: Send meaningful video messages">
 
-<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192554903-1"></script>
     <script>
-        window.location.replace("/");
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-192554903-1');
     </script>
-</body>
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://storytiling.com"/>
+    <meta property="og:site_name" content="StoryTiling"/>
+    <meta property="og:title" content="StoryTiling: Send meaningful video messages">
+    <meta property="og:description" content="No more boring texts or e-cards. Quickly create a thoughtful, personalised video message for birthdays, thank you, congrats and more.">
+    <meta property="og:image" content="http://static1.squarespace.com/static/602a179139fa1301bf069b80/t/6056d689035fb27cbedda34d/1616303755824/Logo_Orange.png?format=1500w"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="StoryTiling: Send meaningful video messages"/>
+    <meta name="twitter:image" content="http://static1.squarespace.com/static/602a179139fa1301bf069b80/t/6056d689035fb27cbedda34d/1616303755824/Logo_Orange.png?format=1500w"/>
+    <meta name="twitter:url" content="https://storytiling.com"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content="No more boring texts or e-cards. Quickly create a thoughtful, personalised video message for birthdays, thank you, congrats and more."/>
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="StoryTiling: Send meaningful video messages">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <base href="/">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+    <title>StoryTiling: Send meaningful video messages</title>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        // The value below is injected by flutter build, do not touch.
+        var serviceWorkerVersion = '2035494738';
+    </script>
+    <script src="flutter.js" defer></script>
+
+    <!-- Detect mobile browser -->
+    <script type='text/javascript'>
+        window.isMobileBrowser = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    </script>
+
+    <!-- Smartlook Tracking Code -->
+    <script type='text/javascript'>
+      if(window.isMobileBrowser === false){
+        window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', '165eaa537ca60123ff627c45c732b6d217664fac', { region: 'eu' });
+      }
+    </script>
+</head>
+<body>
+
+<!-- loader -->
+<div id="loading">
+    <style>
+      body {
+        inset: 0; overflow: hidden;
+        margin: 0; padding: 0;
+        position: fixed;
+      }
+      #loading {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+      }
+      #loading img {
+        animation: 1s ease-in-out 0s infinite alternate breathe;
+        opacity: .66;
+        transition: opacity .4s;
+      }
+      #loading.main_done img {
+        opacity: 1;
+      }
+      #loading.init_done img {
+        animation: .33s ease-in-out 0s 1 forwards zooooom;
+        opacity: .05;
+      }
+      @keyframes breathe { from { transform: scale(1) } to { transform: scale(0.95)}}
+      @keyframes zooooom { from { transform: scale(1) } to { transform: scale(10)}}
+    </style>
+    <img src="icons/Icon-192.png" alt="Loading..." />
+</div>
+<script>
+    window.addEventListener('load', function() {
+      if(window.isMobileBrowser === false){
+        // https://web.developer.smartlook.com/docs/canvas#javascript
+        document.body.dataset.sl = "canvas-mq";
+      }
+
+      var loading = document.querySelector('#loading');
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        loading.classList.add('main_done');
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        loading.classList.add('init_done');
+        return appRunner.runApp();
+      }).then(function(app) {
+        // Wait a few milliseconds so users can see the "zoooom" animation
+        // before getting rid of the "loading" div.
+        window.setTimeout(function() {
+          loading.remove();
+        }, 200);
+      });
+    });
+</script>
+</body>
 </html>
