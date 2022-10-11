@@ -77069,7 +77069,7 @@ o=$.aU
 if(o==null){o=A.ad()===B.r||A.ad()===B.x
 o=$.aU=new A.c0(o)}if(o.a){if(q.e===B.bz)return new A.eY(B.zn,s,p)
 return s}r=a.H(t.w).f.a.a/2+40
-return A.bv(s,p,q.e===B.bz?Math.min(400,r):r)}}
+return A.bv(s,p,q.e===B.bz?Math.min(350,r):r)}}
 A.aeH.prototype={
 $2(a,b){var s,r,q,p=b.b
 if(p!=null){s=this.a
@@ -80720,7 +80720,7 @@ B.h7=new A.aj(1/0,1/0,1/0,1/0)
 B.zk=new A.aj(0,1/0,48,48)
 B.ey=new A.aj(0,160,0,1/0)
 B.zl=new A.aj(258,258,40,1/0)
-B.zn=new A.aj(0,400,0,1/0)
+B.zn=new A.aj(0,350,0,1/0)
 B.zm=new A.aj(0,420,0,1/0)
 B.h8=new A.aj(0,500,0,1/0)
 B.zp=new A.aj(0,530,0,1/0)
