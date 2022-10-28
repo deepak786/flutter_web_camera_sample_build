@@ -77183,7 +77183,8 @@ p=n.a.Q
 B.bb.nr(s,B.bb.n4(s,"object-fit"),p,"")
 p=q.style
 p.backgroundColor="#000000"
-q.id="my-video"
+s=n.w
+q.id="videoElement-"+s
 q.setAttribute("playsinline","true")
 n.a.toString
 o=B.b.bU(" nodownload noplaybackrate")
@@ -77192,17 +77193,17 @@ n.a.toString
 q.setAttribute("disablePictureInPicture",!0)
 if(n.a.z)q.setAttribute("autoplay","true")
 B.Sy.vs(q,"loadedmetadata",new A.aiE(n))
-s=t.TV.c
-A.iA(q,"play",new A.aiF(n),!1,s)
-A.iA(q,"pause",new A.aiG(n),!1,s)
-A.iA(q,"canplay",new A.aiH(n),!1,s)
-A.iA(q,"ended",new A.aiI(n),!1,s)
-A.iA(q,"error",new A.aiJ(n),!1,s)
+p=t.TV.c
+A.iA(q,"play",new A.aiF(n),!1,p)
+A.iA(q,"pause",new A.aiG(n),!1,p)
+A.iA(q,"canplay",new A.aiH(n),!1,p)
+A.iA(q,"ended",new A.aiI(n),!1,p)
+A.iA(q,"error",new A.aiJ(n),!1,p)
 $.Wo()
-$.on().xF(n.w,new A.aiK(n),!0)},
+$.on().xF("videoPlayer-"+s,new A.aiK(n),!0)},
 I(a){var s,r=this,q=null,p=r.a.y
 if(p==null)p=A.ae(q,q,B.h,q,q,q,q,q,q,q,q,q,q)
-s=A.dq(B.a6,A.a([new A.p2(r.w,q),p],t.p),B.q,B.fF)
+s=A.dq(B.a6,A.a([new A.p2("videoPlayer-"+r.w,q),p],t.p),B.q,B.fF)
 if(r.a.w!=null)return new A.dz(a.F(t.w).f.kH(r.a.w),new A.ei(new A.aiC(r,s),q),q)
 return s},
 m(){var s=this.r
