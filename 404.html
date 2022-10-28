@@ -46,7 +46,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '3191072509';
+        var serviceWorkerVersion = '2752379330';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -123,7 +123,15 @@
         // Wait a few milliseconds so users can see the "zoooom" animation
         // before getting rid of the "loading" div.
         window.setTimeout(function() {
-          loading.remove();
+            // set the dataset to canvas element
+            if(window.isMobileBrowser === false){
+                // https://web.developer.smartlook.com/docs/canvas#javascript
+                const canvasElement = document.querySelector("flt-glass-pane").shadowRoot.querySelector("canvas");
+                canvasElement.dataset.sl = "canvas-mq";
+            }
+
+            // remove the loading div
+            loading.remove();
         }, 200);
       });
     });
