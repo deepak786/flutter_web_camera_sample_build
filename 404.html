@@ -46,7 +46,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '2752379330';
+        var serviceWorkerVersion = '1649212332';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -103,11 +103,6 @@
 </div>
 <script>
     window.addEventListener('load', function() {
-      if(window.isMobileBrowser === false){
-        // https://web.developer.smartlook.com/docs/canvas#javascript
-
-      }
-
       var loading = document.querySelector('#loading');
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
@@ -125,6 +120,7 @@
         window.setTimeout(function() {
             // set the dataset to canvas element
             if(window.isMobileBrowser === false){
+                // https://stackoverflow.com/questions/73492855/how-to-put-an-attribute-to-canvas-element-for-flutter-web
                 // https://web.developer.smartlook.com/docs/canvas#javascript
                 const canvasElement = document.querySelector("flt-glass-pane").shadowRoot.querySelector("canvas");
                 canvasElement.dataset.sl = "canvas-mq";
