@@ -75286,7 +75286,7 @@ this.f=r
 return r.eJ(0)},
 I(a){var s,r,q,p=this,o=null,n=$.aS
 if(n==null){n=A.ad()===B.t||A.ad()===B.y
-n=$.aS=new A.bV(n)}n=n.a?a.F(t.w).f.a.a:400
+n=$.aS=new A.bV(n)}n=n.a?17976931348623157e292:Math.min(400,a.F(t.w).f.a.a)
 s=t.p
 n=A.ae(o,A.bn(A.a([A.br(new A.t0(p.a.c,p.gDs(),o),o,n)],s),B.m,B.l,B.n,o),B.h,B.r,o,o,o,o,o,o,o,o,o)
 if(p.f==null)s=B.bn
@@ -75671,7 +75671,7 @@ this.f=r
 return r.eJ(0)},
 I(a){var s,r,q,p,o=this,n=null,m=$.aS
 if(m==null){m=A.ad()===B.t||A.ad()===B.y
-m=$.aS=new A.bV(m)}m=m.a?a.F(t.w).f.a.a:400
+m=$.aS=new A.bV(m)}m=m.a?17976931348623157e292:Math.min(400,a.F(t.w).f.a.a)
 s=t.p
 m=A.ae(n,A.bn(A.a([A.br(new A.t0(o.a.c,o.gDs(),n),n,m)],s),B.m,B.l,B.n,n),B.h,B.r,n,n,n,n,n,n,n,n,n)
 if(o.f==null)s=B.bn
