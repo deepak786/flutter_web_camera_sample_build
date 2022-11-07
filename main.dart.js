@@ -77683,7 +77683,7 @@ l=$.aX
 if(l==null){l=A.aj()===B.v||A.aj()===B.z
 l=$.aX=new A.c6(l)}if(l.a){if(n.f===B.br){l=t.w
 q=a.F(l).f
-p=q.gir(q)===B.br?0.5625*(a.F(l).f.a.b-20):350
+p=q.gir(q)===B.br?0.5625*(a.F(l).f.a.b-40):350
 return new A.eZ(new A.am(0,Math.min(p,350),0,1/0),r,m)}return r}o=a.F(t.w).f.a.a/2+40
 return A.br(r,m,n.f===B.br?Math.min(350,o):o)}}
 A.aeU.prototype={
