@@ -77681,7 +77681,7 @@ n=$.aX=new A.c6(n)}s=new A.eC(n.nH(),new A.aeU(p),o,o,t.yl)
 r=p.r?A.ac(o,A.aK(A.a([A.aa(p.d,o,o,o,o,o,o,o,B.R,B.w,o,o),B.bV,s],t.p),B.m,B.l,B.n),B.h,o,o,B.zs,o,o,o,B.db,o,o,o):s
 n=$.aX
 if(n==null){n=A.aj()===B.v||A.aj()===B.z
-n=$.aX=new A.c6(n)}if(n.a){if(p.f===B.bz)return new A.eZ(new A.am(0,Math.min(0.5625*(a.F(t.w).f.a.b-100),225),0,1/0),r,o)
+n=$.aX=new A.c6(n)}if(n.a){if(p.f===B.bz)return new A.eZ(new A.am(0,Math.min(0.5625*(a.F(t.w).f.a.b-32),225),0,1/0),r,o)
 return r}q=a.F(t.w).f.a.a/2+40
 return A.br(r,o,p.f===B.bz?Math.min(350,q):q)}}
 A.aeU.prototype={
