@@ -47,7 +47,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '411225245';
+        var serviceWorkerVersion = '3110088177';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -104,6 +104,14 @@
 </div>
 <script>
     window.addEventListener('load', function() {
+        if ('serviceWorker' in navigator) {
+            if ('Notification' in window) {
+                // notifications are supported in browser
+                // register firebase-messaging service worker
+                navigator.serviceWorker.register('/firebase-messaging-sw.js');
+            }
+        }
+
       var loading = document.querySelector('#loading');
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
