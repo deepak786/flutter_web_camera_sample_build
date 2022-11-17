@@ -38,9 +38,6 @@
     <meta name="apple-mobile-web-app-title" content="StoryTiling: Send meaningful video messages">
     <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <!-- Google Sign In Client ID -->
-    <meta name="google-signin-client_id" content="976253565107-3rkpq9eer03vljb3thnbs3csb4dpa45a.apps.googleusercontent.com">
-
     <base href="/">
 
     <!-- Favicon -->
@@ -50,7 +47,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '4146919668';
+        var serviceWorkerVersion = '3823756278';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -71,7 +68,7 @@
       }
     </script>
 </head>
-<body>
+<body bgcolor="#FFF8F3">
 
 <!-- loader -->
 <div id="loading">
@@ -107,14 +104,6 @@
 </div>
 <script>
     window.addEventListener('load', function() {
-        if ('serviceWorker' in navigator) {
-            if ('Notification' in window) {
-                // notifications are supported in browser
-                // register firebase-messaging service worker
-                navigator.serviceWorker.register('/firebase-messaging-sw.js');
-            }
-        }
-
       var loading = document.querySelector('#loading');
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
