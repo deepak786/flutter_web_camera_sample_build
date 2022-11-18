@@ -5,7 +5,7 @@
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 
     <meta name="title" content="StoryTiling">
-    <meta name="description" content="StoryTiling: Send meaningful video messages">
+    <meta name="description" content="StoryTiling: Meaningful video gifts">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192554903-1"></script>
@@ -21,21 +21,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://storytiling.com"/>
     <meta property="og:site_name" content="StoryTiling"/>
-    <meta property="og:title" content="StoryTiling: Send meaningful video messages">
-    <meta property="og:description" content="No more boring texts or e-cards. Quickly create a thoughtful, personalised video message for birthdays, thank you, congrats and more.">
-    <meta property="og:image" content="http://static1.squarespace.com/static/602a179139fa1301bf069b80/t/6056d689035fb27cbedda34d/1616303755824/Logo_Orange.png?format=1500w"/>
+    <meta property="og:title" content="StoryTiling: Meaningful video gifts">
+    <meta property="og:description" content="Personalised video gifts for birthdays, thank you, congrats and more.">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/storytiling-video-message.appspot.com/o/logo%2FStoryTiling_Logo_Melon_XL.png?alt=media&token=f2b4aef5-f7fb-4c4b-9022-94abaa98276c"/>
 
     <!-- Twitter -->
-    <meta name="twitter:title" content="StoryTiling: Send meaningful video messages"/>
-    <meta name="twitter:image" content="http://static1.squarespace.com/static/602a179139fa1301bf069b80/t/6056d689035fb27cbedda34d/1616303755824/Logo_Orange.png?format=1500w"/>
+    <meta name="twitter:title" content="StoryTiling: Meaningful video gifts"/>
+    <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/storytiling-video-message.appspot.com/o/logo%2FStoryTiling_Logo_Melon_XL.png?alt=media&token=f2b4aef5-f7fb-4c4b-9022-94abaa98276c"/>
     <meta name="twitter:url" content="https://storytiling.com"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="No more boring texts or e-cards. Quickly create a thoughtful, personalised video message for birthdays, thank you, congrats and more."/>
+    <meta name="twitter:description" content="Personalised video gifts for birthdays, thank you, congrats and more."/>
 
     <!-- iOS meta tags & icons -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="StoryTiling: Send meaningful video messages">
+    <meta name="apple-mobile-web-app-title" content="StoryTiling: Meaningful video gifts">
     <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
     <base href="/">
@@ -43,11 +43,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
-    <title>StoryTiling: Send meaningful video messages</title>
+    <title>StoryTiling: Meaningful video gifts</title>
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '3823756278';
+        var serviceWorkerVersion = '3208711598';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -69,6 +69,11 @@
     </script>
 </head>
 <body bgcolor="#FFF8F3">
+
+<!-- logo -->
+<div id="logo" style="text-align:center;margin-top:32px;">
+    <img src="icons/logo.png" alt="Logo..." height="30"/>
+</div>
 
 <!-- loader -->
 <div id="loading">
@@ -105,6 +110,7 @@
 <script>
     window.addEventListener('load', function() {
       var loading = document.querySelector('#loading');
+      var logo = document.querySelector("#logo");
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
@@ -127,6 +133,8 @@
                 canvasElement.dataset.sl = "canvas-mq";
             }
 
+            // remove the logo div
+            logo.remove();
             // remove the loading div
             loading.remove();
         }, 200);

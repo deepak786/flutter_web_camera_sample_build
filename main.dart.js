@@ -74730,7 +74730,7 @@ A.a5K.prototype={
 gr_(){return A.cl([B.bA,B.bS],t.Q)}}
 A.O5.prototype={
 J(a){var s=null,r=A.aee(s,"Inter",B.Kc,B.v,s,A.azg())
-return new A.zs(this.c,A.aO1(),new A.aeZ(),A.a([$.avT(),$.asP()],t.tc),new A.af_(this),"StoryTiling: Send meaningful video messages",r,!1,new A.a5K(s),s)}}
+return new A.zs(this.c,A.aO1(),new A.aeZ(),A.a([$.avT(),$.asP()],t.tc),new A.af_(this),"StoryTiling: Meaningful video gifts",r,!1,new A.a5K(s),s)}}
 A.af_.prototype={
 $2(a,b){var s=null,r=b==null?B.aK:b,q=t.p
 r=A.a([B.z2,r],q)
