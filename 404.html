@@ -48,7 +48,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '2979685982';
+        var serviceWorkerVersion = '3862845350';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -108,6 +108,44 @@
     </style>
     <img src="icons/Icon-192.png" alt="Loading..." />
 </div>
+
+<!-- AdRoll Script -->
+<script type="text/javascript">
+    adroll_adv_id = "G5G2HWCZFVHA7HXODGZGUQ";
+    adroll_pix_id = "HYUG5E7KQRAUXEKHJ2TDEK";
+    adroll_version = "2.0";
+
+    (function(w, d, e, o, a) {
+        w.__adroll_loaded = true;
+        w.adroll = w.adroll || [];
+        w.adroll.f = [ 'setProperties', 'identify', 'track' ];
+        var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id
+                + "/roundtrip.js";
+        for (a = 0; a < w.adroll.f.length; a++) {
+            w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
+                return function() {
+                    w.adroll.push([ n, arguments ])
+                }
+            })(w.adroll.f[a])
+        }
+
+        e = d.createElement('script');
+        o = d.getElementsByTagName('script')[0];
+        e.async = 1;
+        e.src = roundtripUrl;
+        o.parentNode.insertBefore(e, o);
+    })(window, document);
+    adroll.track("pageView");
+</script>
+
+<!-- Intercom -->
+<script>
+    window.intercomSettings = {
+        hide_default_launcher: true, // set this to false, if you want to show the default launcher
+    };
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
 <script>
     window.addEventListener('load', function() {
         if ('serviceWorker' in navigator) {
@@ -139,7 +177,9 @@
                 // https://stackoverflow.com/questions/73492855/how-to-put-an-attribute-to-canvas-element-for-flutter-web
                 // https://web.developer.smartlook.com/docs/canvas#javascript
                 const canvasElement = document.querySelector("flt-glass-pane").shadowRoot.querySelector("canvas");
-                canvasElement.dataset.sl = "canvas-mq";
+                if(canvasElement){
+                    canvasElement.dataset.sl = "canvas-mq";
+                }
             }
 
             // remove the logo div
