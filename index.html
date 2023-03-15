@@ -48,7 +48,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        var serviceWorkerVersion = '2142946808';
+        var serviceWorkerVersion = '3074550832';
     </script>
     <script src="flutter.js" defer></script>
 
@@ -68,6 +68,28 @@
         smartlook('init', '165eaa537ca60123ff627c45c732b6d217664fac', { region: 'eu' });
       }
     </script>
+
+    <!-- disableChatOpenHash -->
+    <script>
+        window.SibConversationsSetup = {
+            disableChatOpenHash: true
+        };
+    </script>
+
+    <!-- Sendinblue Conversations {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.SibConversationsID = '63fd9164c9e01a557c065132';
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = 'https://conversations-widget.sendinblue.com/sib-conversations.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'SibConversations');
+    </script>
+    <!-- /Sendinblue Conversations {/literal} -->
 </head>
 <body bgcolor="#FFF8F3">
 
@@ -139,12 +161,12 @@
 </script>
 
 <!-- Intercom -->
-<script>
-    window.intercomSettings = {
-        hide_default_launcher: true, // set this to false, if you want to show the default launcher
-    };
-    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-</script>
+<!--<script>-->
+<!--    window.intercomSettings = {-->
+<!--        hide_default_launcher: true, // set this to false, if you want to show the default launcher-->
+<!--    };-->
+<!--    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();-->
+<!--</script>-->
 
 <script>
     window.addEventListener('load', function() {
