@@ -106053,7 +106053,7 @@ m.a.toString
 q.setAttribute("disablePictureInPicture",!0)
 if(m.a.z)q.setAttribute("autoplay","true")
 m.a.toString
-q.setAttribute("oncontextmenu","return false;")
+q.setAttribute("oncontextmenu","event.preventDefault(); return false;")
 B.e9.lR(q,"loadstart",new A.aBS(m))
 B.e9.lR(q,"loadedmetadata",new A.aBT(m))
 p=t.TV.c
