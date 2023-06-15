@@ -28543,7 +28543,7 @@ _.x=i
 _.y=j},
 f4:function f4(){var _=this
 _.f=_.e=_.d=_.c=_.b=_.a=!1},
-bbp(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2){return new A.es(b,c,e,d,l,m,n,r,s,q,g,a2,a,a0,f,h,j,i,k,a1,o,p)},
+bbp(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3){return new A.es(b,c,e,d,l,m,n,s,a0,r,g,a3,a,a1,f,h,j,i,k,a2,o,p,q)},
 ah5(a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0=J.aa(a2),a1=a0.h(a2,"groupId")
 if(a1==null)a1=""
 s=a0.h(a2,"groupOwner")
@@ -28585,8 +28585,8 @@ if(b==null)b=!1
 a=a0.h(a2,"unlockedPlans")
 a=a==null?null:J.hz(a,t.N)
 if(a==null)a=A.a([],t.s)
-return A.bbp(i,a1,s,q,r,f,j,e,c,d,b,p,o,n,a0.h(a2,"paymentCurrency"),a0.h(a2,"paymentCustomerInstructions"),k,m,l,g,a,h)},
-es:function es(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2){var _=this
+return A.bbp(i,a1,s,q,r,f,j,e,c,d,b,p,o,n,a0.h(a2,"paymentCurrency"),a0.h(a2,"paymentCustomerInstructions"),a0.h(a2,"profEditedVideoLink"),k,m,l,g,a,h)},
+es:function es(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -28608,7 +28608,8 @@ _.CW=r
 _.cx=s
 _.cy=a0
 _.db=a1
-_.dx=a2},
+_.dx=a2
+_.dy=a3},
 ah7:function ah7(a,b,c,d,e){var _=this
 _.a=a
 _.b=b
@@ -28634,9 +28635,9 @@ this.c=c},
 bbq(a){var s=A.ah5(a),r=t.kc.a(J.ap(a,"videos"))
 r=r==null?null:J.f_(r,new A.ah3(),t.yr).cs(0)
 if(r==null)r=A.a([],t.n_)
-return new A.kZ(r,s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,s.ay,s.ch,s.CW,s.cx,s.cy,s.db,s.dx)},
-kZ:function kZ(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3){var _=this
-_.dy=a
+return new A.kZ(r,s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,s.ay,s.ch,s.CW,s.cx,s.cy,s.db,s.dx,s.dy)},
+kZ:function kZ(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4){var _=this
+_.fr=a
 _.a=b
 _.b=c
 _.c=d
@@ -28658,7 +28659,8 @@ _.CW=s
 _.cx=a0
 _.cy=a1
 _.db=a2
-_.dx=a3},
+_.dx=a3
+_.dy=a4},
 ah3:function ah3(){},
 ah2:function ah2(){},
 ah4:function ah4(){},
@@ -99663,6 +99665,7 @@ r.l(0,"isPaidUnliVideos",s.cx)
 r.l(0,"unlockedPlans",s.cy)
 r.l(0,"paymentCurrency",s.db)
 r.l(0,"paymentCustomerInstructions",s.dx)
+r.l(0,"profEditedVideoLink",s.dy)
 return r},
 Yb(a,b,c,d){var s,r,q,p=t.N,o=A.v(p,p)
 if(d!=null)o.l(0,"utm_source",d)
@@ -99798,7 +99801,7 @@ s.l(0,"shareMessage",this.b)
 s.l(0,"remindMessage",this.c)
 return s}}
 A.kZ.prototype={
-bx(){var s=this.a6W(),r=this.dy,q=A.a0(r).i("af<1,aQ<l,@>>")
+bx(){var s=this.a6W(),r=this.fr,q=A.a0(r).i("af<1,aQ<l,@>>")
 s.l(0,"videos",A.au(new A.af(r,new A.ah4(),q),!0,q.i("aL.E")))
 return s}}
 A.ah3.prototype={
@@ -101774,9 +101777,9 @@ avC(){var s,r=null,q=A.w6(new A.X4(1,180,14),-1,0),p=this.f?B.t:B.CB,o=this.w
 o===$&&A.b()
 s=o.a
 return A.a8S(p,A.av0(B.t,o.b.a9(0,s.gn(s)),A.pR("assets/gift.png",B.t,r,r,150,150),r),r,new A.X5(new A.zP(1,q,B.cu)),r,B.b6,r,r,new A.aGp(this),r)},
-Gx(){var s=null,r=this.d
-r=r.length!==0?B.b.gS(r).o6():""
-return A.r0(s,s,s,s,new A.aGv(),s,s,B.c9,s,!1,"",r)},
+Gx(){var s=null,r=this.a.c.dy
+if(r==null){r=this.d
+r=r.length!==0?B.b.gS(r).o6():""}return A.r0(s,s,s,s,new A.aGv(),s,s,B.c9,s,!1,"",r)},
 OC(a,b){var s,r,q,p,o=this,n=null,m=o.d
 if(m.length!==0){s=A.bR(m).i("af<1,l>")
 r=A.au(new A.af(m,new A.aGr(),s),!0,s.i("aL.E"))
@@ -106231,12 +106234,12 @@ s=p.e
 r=A.a0(s).i("af<1,hF>")
 q=t.p
 r=A.a([A.i3(B.aK,A.au(new A.af(s,new A.aEC(),r),!0,r.i("aL.E")),B.dz,B.S,o,B.bH,8,8,o,B.ai)],q)
-if(p.a.c.dy.length===0)B.b.G(r,A.a([A.an(A.a([A.bB(B.b3,B.M,o,!1,"Test recording a message",new A.aED(p,a),B.h),B.P,A.bB(B.b3,B.bV,o,!1,"Invite participants to record a video",new A.aEE(p,a),B.h)],q),B.l,B.j,B.k)],q))
+if(p.a.c.fr.length===0)B.b.G(r,A.a([A.an(A.a([A.bB(B.b3,B.M,o,!1,"Test recording a message",new A.aED(p,a),B.h),B.P,A.bB(B.b3,B.bV,o,!1,"Invite participants to record a video",new A.aEE(p,a),B.h)],q),B.l,B.j,B.k)],q))
 s=A.cp(B.t,r,B.q,B.a3,o)
 r=A.jU(p.a.c.at)
 r=r==null?o:A.h6("dd MMM yyyy",o).eN(r)
-return A.PY(A.bM(!1,o,!0,A.X(o,A.an(A.a([m,n,B.iW,s,B.bE,A.S("Due on "+A.i(r)+" - "+p.a.c.dy.length+" videos",o,o,o,o,o,!0,o,$.dJ(),o,o,o),A.oD(A.bM(!1,o,!0,A.S("Manage video gift",o,o,o,o,o,o,o,$.rG().p6(B.x,B.as),o,o,o),o,!0,o,o,o,o,o,o,o,o,o,o,o,new A.aEF(p,a),o,o,o,o,o,o,o,o),!0,!0,!0,!0)],q),B.T,B.j,B.k),B.f,o,o,o,o,o,o,B.b7,o,o,330),o,!0,o,o,o,o,o,o,o,o,o,o,o,new A.aEG(p,a),o,o,o,o,o,o,o,o),o,o,B.y,B.lA)},
-OY(){var s,r,q,p,o,n=A.fr(this.a.c.dy,!0,t.yr)
+return A.PY(A.bM(!1,o,!0,A.X(o,A.an(A.a([m,n,B.iW,s,B.bE,A.S("Due on "+A.i(r)+" - "+p.a.c.fr.length+" videos",o,o,o,o,o,!0,o,$.dJ(),o,o,o),A.oD(A.bM(!1,o,!0,A.S("Manage video gift",o,o,o,o,o,o,o,$.rG().p6(B.x,B.as),o,o,o),o,!0,o,o,o,o,o,o,o,o,o,o,o,new A.aEF(p,a),o,o,o,o,o,o,o,o),!0,!0,!0,!0)],q),B.T,B.j,B.k),B.f,o,o,o,o,o,o,B.b7,o,o,330),o,!0,o,o,o,o,o,o,o,o,o,o,o,new A.aEG(p,a),o,o,o,o,o,o,o,o),o,o,B.y,B.lA)},
+OY(){var s,r,q,p,o,n=A.fr(this.a.c.fr,!0,t.yr)
 B.b.a5u(n)
 s=A.fz(n,0,A.ed(6,"count",t.S),A.a0(n).c)
 r=s.$ti.i("af<aL.E,l>")
@@ -106246,7 +106249,7 @@ if(p!==6)for(s=6-p,o=0;o<s;++o)B.b.D(q,"")
 return q}}
 A.aEG.prototype={
 $0(){var s=this.a,r=s.a.c
-if(r.dy.length===0){s=s.d.gL()
+if(r.fr.length===0){s=s.d.gL()
 if(s!=null)s.Pz()}else{s=A.U(["group",r],t.N,t.p6)
 A.b2(this.b,!1).ei("/manage-group-video",s,t.X)}},
 $S:0}
