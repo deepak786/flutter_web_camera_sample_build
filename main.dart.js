@@ -106098,6 +106098,7 @@ while(true)switch(s){case 0:try{B.dy.aBQ(q.r)}catch(o){q.r.webkitEnterFullscreen
 return A.r($async$O6,r)}}
 A.aBS.prototype={
 $1(a){a.preventDefault()
+a.stopPropagation()
 return!1},
 $S:752}
 A.aBT.prototype={
