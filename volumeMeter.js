@@ -31,14 +31,19 @@ class VolumeMeter extends AudioWorkletProcessor {
   }
 
   process(inputs, outputs) {
-    // This example only handles mono channel.
-    const inputChannelData = inputs[0][0];
+    const input = inputs[0];
 
-    // Post a message to the node every 16ms.
-    if (currentTime - this._lastUpdate > FRAME_INTERVAL) {
-      this.calculateRMS(inputChannelData);
-      this.port.postMessage(this._volume);
-      this._lastUpdate = currentTime;
+    // Note that the input will be down-mixed to mono; however, if no inputs are
+    // connected then zero channels will be passed in.
+    if (input.length > 0) {
+      const inputChannelData = input[0];
+
+      // Post a message to the node every 16ms.
+      if (currentTime - this._lastUpdate > FRAME_INTERVAL) {
+        this.calculateRMS(inputChannelData);
+        this.port.postMessage(this._volume);
+        this._lastUpdate = currentTime;
+      }
     }
 
     return true;
