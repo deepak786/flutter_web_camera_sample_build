@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, width=device-width" />
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
 
     <meta name="title" content="StoryTiling">
     <meta name="description" content="StoryTiling: Let people know they matter">
@@ -49,13 +50,21 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // The value below is injected by flutter build, do not touch.
-        const serviceWorkerVersion = "328150249";
+        const serviceWorkerVersion = "2211955100";
     </script>
     <script src="flutter.js" defer></script>
 
     <!-- Detect mobile browser -->
     <script type='text/javascript'>
         window.isMobileBrowser = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    </script>
+
+    <!-- Check if it is delivery flow -->
+    <script>
+    if(window.location){
+        const pathname = window.location.pathname;
+        window.stDeliveryFlow = (pathname === "/group-video-message" || pathname === "/group-video-teaser" || pathname === "/professional-video");
+    }
     </script>
 
     <!-- Smartlook Tracking Code -->
@@ -107,46 +116,117 @@
         audio.play();
       }
     </script>
-</head>
-<body bgcolor="#FFF8F3">
 
-<!-- logo -->
-<div id="logo" style="text-align:center;margin-top:32px;">
-    <img src="icons/logo.png" alt="Logo..." height="30"/>
-</div>
-
-<!-- loader -->
-<div id="loading">
     <style>
-      body {
-        inset: 0; overflow: hidden;
-        margin: 0; padding: 0;
-        position: fixed;
-      }
-      #loading {
-        align-items: center;
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        width: 100%;
-      }
-      #loading img {
-        animation: 1s ease-in-out 0s infinite alternate breathe;
-        opacity: .66;
-        transition: opacity .4s;
-      }
-      #loading.main_done img {
-        opacity: 1;
-      }
-      #loading.init_done img {
-        animation: .33s ease-in-out 0s 1 forwards zooooom;
-        opacity: .05;
-      }
-      @keyframes breathe { from { transform: scale(1) } to { transform: scale(0.95)}}
-      @keyframes zooooom { from { transform: scale(1) } to { transform: scale(10)}}
+        body {
+            font-family: 'Lexend Deca';
+            font-size: 32px;
+            background-color: var(--bodyBack);
+            color: var(--bodyColor);
+            inset: 0;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+        }
+
+        #logo {
+            text-align: center;
+            margin-top: 32px;
+            display: var(--displayLogo);
+        }
+
+        #loading {
+            align-items: center;
+            display: var(--displayLoading);
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+        }
+        #loading img {
+            animation: 1s ease-in-out 0s infinite alternate breathe;
+            opacity: .66;
+            transition: opacity .4s;
+        }
+        #loading.main_done img {
+            opacity: 1;
+        }
+        #loading.init_done img {
+            animation: .33s ease-in-out 0s 1 forwards zooooom;
+            opacity: .05;
+        }
+        @keyframes breathe { from { transform: scale(1) } to { transform: scale(0.95)}}
+        @keyframes zooooom { from { transform: scale(1) } to { transform: scale(10)}}
+
+        #loadingText {
+            position: fixed;
+            width: 100%;
+            height:100%;
+            display: var(--displayLoadingText);
+            align-items: center;
+            top: 0;
+        }
+
+        @keyframes loadingSpinner {
+          to {transform: rotate(360deg);}
+        }
+
+        /* Safari */
+        @-webkit-keyframes loadingSpinner {
+          to {transform: rotate(360deg);}
+        }
+
+        .loadingSpinner:before {
+          content: '';
+          box-sizing: border-box;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 60px;
+          height: 60px;
+          margin-top: -30px;
+          margin-left: -30px;
+          border-radius: 50%;
+          border: 4px solid #ccc;
+          border-top-color: #000000;
+          animation: spinner .6s linear infinite;
+          -webkit-animation: loadingSpinner .6s linear infinite; /* Safari */
+        }
+
+        .loadingSpinner {
+            display: var(--displayLoadingSpinner);
+        }
+
     </style>
-    <img src="icons/Icon-192.png" alt="Loading..." />
-</div>
+</head>
+<body>
+<script>
+    if(window.stDeliveryFlow){
+        document.documentElement.style.setProperty('--bodyBack', '#ffffff');
+        document.documentElement.style.setProperty('--bodyColor', '#000000');
+        document.documentElement.style.setProperty('--displayLogo', 'none');
+        document.documentElement.style.setProperty('--displayLoading', 'none');
+        document.documentElement.style.setProperty('--displayLoadingText', 'flex');
+        document.documentElement.style.setProperty('--displayLoadingSpinner', 'block');
+    }else{
+        document.documentElement.style.setProperty('--bodyBack', '#FFF8F3');
+        document.documentElement.style.setProperty('--bodyColor', '#00006F');
+        document.documentElement.style.setProperty('--displayLogo', 'block');
+        document.documentElement.style.setProperty('--displayLoading', 'flex');
+        document.documentElement.style.setProperty('--displayLoadingText', 'none');
+        document.documentElement.style.setProperty('--displayLoadingSpinner', 'none');
+    }
+</script>
+
+<!-- Non delivery flow -->
+<div id="logo"><img src="icons/logo.png" alt="Logo..." height="30"/></div>
+<div id="loading"><img src="icons/Icon-192.png" alt="Loading..." /></div>
+<!-- Non delivery flow ends here-->
+
+<!-- Delivery flow -->
+<div id="loadingText"><div style="display: flex; margin-top: 0; margin-bottom: 140px; margin-left: auto; margin-right: auto; text-align: center;">Showing people they matter</div></div>
+<div class="loadingSpinner" id="loadingSpinner"></div>
+<!-- Delivery flow ends here-->
 
 <!-- AdRoll Script -->
 <script type="text/javascript">
@@ -195,8 +275,11 @@
             }
         }
 
-      var loading = document.querySelector('#loading');
-      var logo = document.querySelector("#logo");
+       var loading = document.querySelector('#loading');
+       var logo = document.querySelector("#logo");
+       var loadingText = document.querySelector('#loadingText');
+       var loadingSpinner = document.querySelector('#loadingSpinner');
+
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
@@ -223,9 +306,10 @@
                 }
             }
 
-            // remove the logo div
+            // remove the loading text and spinner
+            loadingSpinner.remove();
+            loadingText.remove();
             logo.remove();
-            // remove the loading div
             loading.remove();
         }, 200);
       });
