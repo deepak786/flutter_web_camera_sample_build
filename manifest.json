@@ -3,7 +3,7 @@
   "short_name": "StoryTiling",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#FFF8F3",
+  "background_color": "#F6F7FB",
   "theme_color": "#FF5C47",
   "description": "Personalized group videos for anniversaries, welcome and more",
   "orientation": "portrait-primary",
